@@ -1,12 +1,17 @@
-import { notFound } from "next/navigation";
-import React from "react";
+import MainMobile from "@/components/mobile/main";
+import MainPc from "@/components/pc/main";
 
-export default async function Company({
-  params,
-}: {
-  params: Promise<{ code: String }>;
-}) {
-  notFound();
-  const { code } = await params;
-  return <div>对应的页面{code}</div>;
+export const dynamic = "force-dynamic"; // 每次请求强制重新生成内容
+
+export default function CompanyPage() {
+  return (
+    <div>
+      <div className="hidden md:block">
+        <MainPc></MainPc>
+      </div>
+      <div className="block md:hidden">
+        <MainMobile></MainMobile>
+      </div>
+    </div>
+  );
 }
