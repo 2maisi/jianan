@@ -6,7 +6,6 @@ export default function JiaBanner() {
 
     const images = [
         "https://img0.baidu.com/it/u=411008016,3907851684&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
-        "https://s.lianzhongyun.com/news/2020/0720/b4271ff5661b5b2a010f83ab57172ed5.png",
         "https://5b0988e595225.cdn.sohucs.com/images/20190428/78e024832a044f9c831115bf29499cd3.jpeg"
     ]
 
