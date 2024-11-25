@@ -1,7 +1,8 @@
 "use client";
 
-import MainPc from "./components/pc/main";
-import MainMobile from "./components/mobile/main";
+import MainPc from "../components/pc/main";
+import MainMobile from "../components/mobile/main";
+import Link from "next/link";
 
 export default function Home() {
   const desc =
@@ -10,6 +11,7 @@ export default function Home() {
 
   return (
     <div>
+      <Link href={'./com'}>点击我</Link>
       <div className="hidden md:block">
         <MainPc></MainPc>
       </div>
